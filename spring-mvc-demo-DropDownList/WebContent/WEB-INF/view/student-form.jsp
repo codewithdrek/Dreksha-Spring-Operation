@@ -7,7 +7,7 @@
 </head>
 
 <body>
- <form:form action="processForm" modelArribute="theStudent">
+ <form:form action="processForm" modelAttribute="theStudent">
 <br><br>
 
  Countries:

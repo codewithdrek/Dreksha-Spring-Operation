@@ -8,7 +8,7 @@
 <body>
 
 
-<form:form action="processForm" modelArribute="theStudent">
+<form:form action="processForm" modelAttribute="theStudent">
 
 <!-- Radio Step 1 -->
 <!--  favoriteLanguage is same as model Attribute -->
