@@ -19,8 +19,9 @@ public class CustomerController {
 
 	//Step 3 hibernate
 	@RequestMapping("/showForm")
-    public String processForm(Model theModel) {
-		theModel.addAttribute("customer",new Customer());
+    public String processForm(Model model) {
+		Customer customer = new Customer();
+		model.addAttribute("customer",customer);
 		 return "customer-form";
 	}
 	
@@ -31,10 +32,10 @@ public class CustomerController {
 	}
 	
 	@RequestMapping("/processForm")
-    public String processForm(@Valid @ModelAttribute("customer") Customer thecustomer,
+    public String processForm(@Valid @ModelAttribute("customer") Customer customer,
     		BindingResult  bindingResult) {
 		
-		System.out.print("Last Name : |"+thecustomer.getLastName()+"|");
+		System.out.print("Last Name : |"+customer.getLastName()+"|");
 		
 		System.out.println("Binding Result"+"-----"+bindingResult);
 		if(bindingResult.hasErrors()) {

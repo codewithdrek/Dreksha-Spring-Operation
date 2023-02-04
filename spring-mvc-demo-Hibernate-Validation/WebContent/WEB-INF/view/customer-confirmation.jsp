@@ -11,7 +11,7 @@ The Customer is Confirmed : ${customer.firstName} ,
 ${customer.lastName}
 
 <br><br>
-Free Passes : ${customer.freePasses} 
+Free Passes : ${customer.freepasses} 
 
 <br><br>
 Course code : ${customer.courseCode} 
